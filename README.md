@@ -93,7 +93,7 @@ codex plugin marketplace list
 codex plugin add pod@pod-dev-plugins
 ```
 
-Restart Codex after changing plugin or marketplace files. Then open Plugins, choose the `Pod Dev Plugins` marketplace, verify `Pod` is installed and enabled, and enable the bundled `pod-transcripts` MCP server if prompted.
+Restart Codex after changing plugin or marketplace files. Then open Plugins, choose the `Pod Dev Plugins` marketplace, verify `Pod` is installed and enabled, and enable the bundled `pod` MCP server if prompted.
 
 In a new Codex thread, explicitly invoke a bundled skill with `$`:
 
@@ -110,10 +110,10 @@ You can also test implicit skill selection:
 Use Pod to identify stakeholder gaps in the Acme deal.
 ```
 
-Run `/mcp` in Codex and verify `pod-transcripts` is enabled and has tools. If it is missing, add the server manually while testing:
+Run `/mcp` in Codex and verify `pod` is enabled and has tools. If it is missing, add the server manually while testing:
 
 ```bash
-codex mcp add pod-transcripts --url https://gateway.workwithpod.com/mcp --bearer-token-env-var POD_MCP_API_KEY
+codex mcp add pod --url https://gateway.workwithpod.com/mcp --bearer-token-env-var POD_MCP_API_KEY
 ```
 
 ## Connect Pod MCP

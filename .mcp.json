@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "pod-transcripts": {
+    "pod": {
       "type": "http",
       "url": "https://gateway.workwithpod.com/mcp",
       "headers": {
