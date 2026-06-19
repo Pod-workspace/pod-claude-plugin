@@ -1,8 +1,8 @@
-# Pod Claude Plugin
+# Pod Plugin
 
 Pod is a sales workflow plugin powered by Pod MCP. It teaches Claude how to use Pod's read-only intelligence surface for deal review, call prep, meeting debriefs, pipeline triage, stakeholder analysis, and account relationship summaries.
 
-This repository is the source of truth for the Claude plugin package. The plugin does not implement Pod MCP tools; it packages skills, slash commands, manifests, optional MCP configuration, and submission materials.
+This repository is the source of truth for the Pod plugin package. The plugin does not implement Pod MCP tools; it packages skills, slash commands, manifests, optional MCP configuration, and submission materials.
 
 ## What Is Included
 
@@ -50,7 +50,7 @@ Then try:
 After the public repository is available, users can add the marketplace and install the plugin:
 
 ```text
-/plugin marketplace add Pod-workspace/pod-claude-plugin
+/plugin marketplace add Pod-workspace/pod-plugin
 /plugin install pod@pod-plugins
 ```
 

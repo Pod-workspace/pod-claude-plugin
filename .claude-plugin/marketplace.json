@@ -15,7 +15,7 @@
         "name": "Pod"
       },
       "homepage": "https://www.workwithpod.com",
-      "repository": "https://github.com/Pod-workspace/pod-claude-plugin",
+      "repository": "https://github.com/Pod-workspace/pod-plugin",
       "license": "MIT",
       "keywords": [
         "pod",
