@@ -1,0 +1,9 @@
+{
+  "name": "pod-claude-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pod Claude plugin package powered by Pod MCP.",
+  "scripts": {
+    "validate": "claude plugin validate ."
+  }
+}

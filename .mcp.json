@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "pod-transcripts": {
+      "type": "http",
+      "url": "https://gateway.workwithpod.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${POD_MCP_API_KEY}"
+      }
+    }
+  }
+}
