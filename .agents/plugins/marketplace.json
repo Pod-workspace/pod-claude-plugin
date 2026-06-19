@@ -1,0 +1,20 @@
+{
+  "name": "pod-dev-plugins",
+  "interface": {
+    "displayName": "Pod Dev Plugins"
+  },
+  "plugins": [
+    {
+      "name": "pod",
+      "source": {
+        "source": "local",
+        "path": "./pod"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Business"
+    }
+  ]
+}

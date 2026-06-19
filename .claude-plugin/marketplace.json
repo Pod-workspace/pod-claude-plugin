@@ -8,7 +8,7 @@
     {
       "name": "pod",
       "displayName": "Pod",
-      "source": "./",
+      "source": "./pod",
       "description": "Sales workflow plugin powered by Pod MCP for deal review, call prep, meeting debriefs, pipeline triage, stakeholder analysis, and account relationship summaries.",
       "version": "0.1.0",
       "author": {

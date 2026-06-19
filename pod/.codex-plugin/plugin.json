@@ -29,8 +29,8 @@
     ],
     "websiteURL": "https://www.workwithpod.com",
     "brandColor": "#5000A2",
-    "composerIcon": "./assets/icon.svg",
-    "logo": "./assets/icon.svg",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Use Pod to review deal risk for an account.",
       "Use Pod to prepare for an upcoming customer meeting.",
