@@ -1,4 +1,5 @@
 ---
+name: pipeline-triage
 description: Rank and triage pipeline focus using Pod MCP deal priorities, recommendations, framework coverage, transcript evidence, and Pod Agent synthesis. Use when the user asks what deals to focus on, pipeline triage, top deals, at-risk deals, watchlist review, or manager pipeline review.
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: call-prep
 description: Prepare discovery, demo, executive, renewal, or multi-stakeholder meetings using Pod MCP evidence. Use when the user asks for call prep, meeting prep, discovery prep, demo prep, executive prep, objection prep, or a conversation plan.
 ---
 

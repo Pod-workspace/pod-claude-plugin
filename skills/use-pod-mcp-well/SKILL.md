@@ -1,5 +1,6 @@
 ---
-description: Use Pod MCP correctly for sales workflow research. Apply this whenever a user asks Claude to use Pod, Pod MCP, deal intelligence, transcripts, recommendations, priorities, playbooks, stakeholder sentiment, or account context.
+name: use-pod-mcp-well
+description: Use Pod MCP correctly for sales workflow research. Apply this whenever a user asks an agent to use Pod, Pod MCP, deal intelligence, transcripts, recommendations, priorities, playbooks, stakeholder sentiment, or account context.
 ---
 
 # Use Pod MCP Well

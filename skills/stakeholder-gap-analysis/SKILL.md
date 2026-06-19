@@ -1,4 +1,5 @@
 ---
+name: stakeholder-gap-analysis
 description: Analyze buying committee coverage, champion health, economic buyer engagement, contact sentiment, and multi-threading gaps using Pod MCP. Use when the user asks about stakeholder gaps, buying committee risk, champion strength, economic buyer coverage, missing roles, or multi-threading.
 ---
 

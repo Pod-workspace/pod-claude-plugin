@@ -1,4 +1,5 @@
 ---
+name: deal-risk-review
 description: Review deal risk using Pod MCP evidence. Use when the user asks for deal health, risk assessment, stalled deal diagnosis, close date reality checks, forecast risk, or why a deal may be at risk.
 ---
 

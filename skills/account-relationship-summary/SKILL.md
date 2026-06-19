@@ -1,4 +1,5 @@
 ---
+name: account-relationship-summary
 description: Summarize account-level relationship health, engaged contacts, sentiment, coverage gaps, and relationship-building actions using Pod MCP. Use when the user asks for an account relationship summary, account health, relationship map, contact coverage, or account-level stakeholder readout.
 ---
 

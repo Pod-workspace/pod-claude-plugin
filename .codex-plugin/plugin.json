@@ -1,0 +1,40 @@
+{
+  "name": "pod",
+  "version": "0.1.0",
+  "description": "Sales workflow plugin powered by Pod MCP for deal review, call prep, meeting debriefs, pipeline triage, stakeholder analysis, and account relationship summaries.",
+  "author": {
+    "name": "Pod",
+    "url": "https://www.workwithpod.com"
+  },
+  "homepage": "https://www.workwithpod.com",
+  "repository": "https://github.com/Pod-workspace/pod-plugin",
+  "license": "MIT",
+  "keywords": [
+    "pod",
+    "sales",
+    "crm",
+    "deal-intelligence",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Pod",
+    "shortDescription": "Sales workflows powered by Pod MCP.",
+    "longDescription": "Use Pod MCP evidence for deal review, call prep, meeting debriefs, pipeline triage, stakeholder analysis, and account relationship summaries.",
+    "developerName": "Pod",
+    "category": "Business",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://www.workwithpod.com",
+    "brandColor": "#5000A2",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "defaultPrompt": [
+      "Use Pod to review deal risk for an account.",
+      "Use Pod to prepare for an upcoming customer meeting.",
+      "Use Pod to triage my open pipeline."
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 ---
+name: call-summary
 description: Summarize sales calls and meeting debriefs using Pod MCP transcripts and summaries. Use when the user asks for a call summary, meeting debrief, recent call recap, commitments, open questions, sentiment shifts, or post-meeting next steps.
 ---
 

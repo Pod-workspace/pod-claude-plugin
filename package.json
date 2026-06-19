@@ -2,8 +2,9 @@
   "name": "pod-plugin",
   "version": "0.1.0",
   "private": true,
-  "description": "Pod plugin package powered by Pod MCP.",
+  "description": "Pod plugin package powered by Pod MCP for Claude and Codex.",
   "scripts": {
-    "validate": "claude plugin validate ."
+    "validate:claude": "claude plugin validate .",
+    "validate:codex": "python3 \"$HOME/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py\" ."
   }
 }
