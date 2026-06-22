@@ -1,7 +1,7 @@
 {
-  "name": "pod-dev-plugins",
+  "name": "pod-plugins",
   "interface": {
-    "displayName": "Pod Dev Plugins"
+    "displayName": "Pod Plugins"
   },
   "plugins": [
     {

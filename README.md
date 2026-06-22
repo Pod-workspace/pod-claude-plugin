@@ -51,7 +51,7 @@ Codex uses `pod/.codex-plugin/plugin.json` and the plugin files under `pod/`. Fo
 npm run setup:codex
 ```
 
-This runs `codex plugin marketplace add "$PWD"` followed by `codex plugin add pod@pod-dev-plugins`.
+This runs `codex plugin marketplace add "$PWD"` followed by `codex plugin add pod@pod-plugins`.
 
 Codex invokes the same workflows as skills, such as `$deal-risk-review`, `$call-summary`, `$call-prep`, and `$pipeline-triage`.
 
@@ -60,7 +60,7 @@ Codex invokes the same workflows as skills, such as `$deal-risk-review`, `$call-
 This repository follows the same shape as a marketplace collection: repository-level marketplace metadata points to plugin folders, and each plugin folder contains its own Claude Code manifest, commands, skills, and MCP configuration.
 
 ```text
-pod-plugin/
+pod-plugins/
 ├── .claude-plugin/marketplace.json  # Claude Code marketplace listing
 ├── .agents/plugins/marketplace.json # Codex local marketplace listing
 ├── pod/

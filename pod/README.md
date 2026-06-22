@@ -47,7 +47,7 @@ Codex uses `pod/.codex-plugin/plugin.json` and invokes skills with `$skill-name`
 npm run setup:codex
 ```
 
-This runs `codex plugin marketplace add "$PWD"` followed by `codex plugin add pod@pod-dev-plugins`.
+This runs `codex plugin marketplace add "$PWD"` followed by `codex plugin add pod@pod-plugins`.
 
 Restart Codex after changing plugin or marketplace files. Run `/mcp` and verify the bundled `pod` MCP server is enabled. If it is missing while testing, add it manually:
 
