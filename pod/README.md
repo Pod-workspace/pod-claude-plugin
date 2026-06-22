@@ -10,7 +10,7 @@ This plugin package contains Pod workflow skills, Claude Code slash commands, an
 
 ## Getting Started
 
-Pod MCP requires a Pod API key. Create or request one from the API key or MCP settings in your Pod workspace, then set it before launching Claude Code or Codex:
+Pod MCP requires a Pod API key. Create or request one from [Pod API settings](https://app.workwithpod.com/dashboard/account-settings/api), then set it before launching Claude Code or Codex:
 
 ```bash
 export POD_MCP_API_KEY="your-pod-api-key"
@@ -28,7 +28,7 @@ Install from the Claude community marketplace once the plugin is approved:
 For local testing from the repository root:
 
 ```bash
-npm run setup:claude
+npm run test:claude
 ```
 
 This runs:
@@ -39,12 +39,20 @@ claude --plugin-dir ./pod
 
 Inside Claude Code, run `/reload-plugins`, then try `/pod:deal-risk-review Acme renewal`. For local MCP testing, you can also copy the repository-level `.claude/settings.local.example.json` to `.claude/settings.local.json`, set the key there, and keep `enabledMcpjsonServers` set to `["pod"]`.
 
-### Codex
-
-Codex uses `pod/.codex-plugin/plugin.json` and invokes skills with `$skill-name`, not Claude Code slash commands. For local testing, register the repository root as a Codex marketplace, then install `pod`:
+To install the local plugin into Claude Code for this repository:
 
 ```bash
-npm run setup:codex
+npm run setup:claude:local
+```
+
+This adds the current repository as a local Claude marketplace and installs `pod@pod-plugins` with local scope.
+
+### Codex
+
+Codex uses `pod/.codex-plugin/plugin.json` and invokes skills with `$skill-name`, not Claude Code slash commands. For local testing, set up the repository root as a Codex marketplace, then install `pod`:
+
+```bash
+npm run setup:codex:local
 ```
 
 This runs `codex plugin marketplace add "$PWD"` followed by `codex plugin add pod@pod-plugins`.
@@ -115,8 +123,6 @@ When a write action is needed, the assistant should explain the boundary and tel
 Run:
 
 ```bash
-npm run setup:claude
-npm run setup:codex
 npm run validate:claude
 npm run validate:codex
 ```

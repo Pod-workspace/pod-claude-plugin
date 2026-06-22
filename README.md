@@ -14,7 +14,7 @@ The plugin does not implement Pod MCP tools. It points Claude Code and Codex at 
 
 ## Getting Started
 
-Pod MCP requires a Pod API key. Create or request one from the API key or MCP settings in your Pod workspace, then set it before launching Claude Code or Codex:
+Pod MCP requires a Pod API key. Create or request one from [Pod API settings](https://app.workwithpod.com/dashboard/account-settings/api), then set it before launching Claude Code or Codex:
 
 ```bash
 export POD_MCP_API_KEY="your-pod-api-key"
@@ -32,7 +32,7 @@ Install from the Claude community marketplace once the plugin is approved:
 For local testing from this repository:
 
 ```bash
-npm run setup:claude
+npm run test:claude
 ```
 
 This runs:
@@ -41,14 +41,22 @@ This runs:
 claude --plugin-dir ./pod
 ```
 
+To install the local plugin into Claude Code for this repository:
+
+```bash
+npm run setup:claude:local
+```
+
+This adds the current repository as a local Claude marketplace and installs `pod@pod-plugins` with local scope.
+
 Once installed, skills fire when relevant and slash commands are available in your session, such as `/pod:deal-risk-review` and `/pod:call-prep`.
 
 ### Codex
 
-Codex uses `pod/.codex-plugin/plugin.json` and the plugin files under `pod/`. For local testing, register this repository root as a Codex marketplace, then install `pod`:
+Codex uses `pod/.codex-plugin/plugin.json` and the plugin files under `pod/`. For local testing, set up the repository root as a Codex marketplace, then install `pod`:
 
 ```bash
-npm run setup:codex
+npm run setup:codex:local
 ```
 
 This runs `codex plugin marketplace add "$PWD"` followed by `codex plugin add pod@pod-plugins`.
@@ -87,8 +95,6 @@ See [pod/README.md](./pod/README.md) for command tables, MCP capabilities, usage
 Run both validators before release or submission:
 
 ```bash
-npm run setup:claude
-npm run setup:codex
 npm run validate:claude
 npm run validate:codex
 ```

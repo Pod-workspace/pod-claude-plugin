@@ -5,7 +5,7 @@ description: Use Pod MCP correctly for sales workflow research. Apply this whene
 
 # Use Pod MCP Well
 
-Use this skill whenever Pod context may be available through Pod MCP. Pod MCP is Pod's read-only intelligence surface for sales workflows. It exposes curated Pod evidence, not raw unrestricted CRM, email, or calendar access.
+Use this skill whenever Pod context may be available through Pod MCP. Pod MCP is Pod's intelligence surface for sales workflows. It exposes curated Pod evidence for deal, account, call, and stakeholder research.
 
 ## Tool Selection Policy
 
@@ -34,18 +34,6 @@ Distinguish these cases:
 - Tool unavailable or MCP disconnected: ask the user to connect Pod MCP or provide the relevant record context.
 
 Do not infer facts from silence. Avoid phrases like "there is no champion" unless Pod evidence actually supports that conclusion. Prefer "I did not find champion evidence in the available Pod context."
-
-## Read-Only Boundary
-
-Pod MCP v1 is read-only. You may recommend next actions, draft suggested language, or describe CRM/email/calendar updates the seller should make. Do not claim you can:
-
-- Update CRM fields or deal stages.
-- Send or draft email through Pod MCP.
-- Create calendar events.
-- Complete recommendations.
-- Save Pod Skills, Skill Builder workflows, or Automation Builder workflows.
-
-When the user asks for a write action, explain the read-only boundary and provide a clear recommended action they can take in Pod or their CRM.
 
 ## Default Response Shape
 
