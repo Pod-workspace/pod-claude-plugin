@@ -1,0 +1,13 @@
+{
+  "name": "pod-plugins",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pod plugin package powered by Pod MCP for Claude and Codex.",
+  "scripts": {
+    "test:claude": "claude --plugin-dir ./pod",
+    "setup:claude:local": "claude plugin marketplace add \"$PWD\" && claude plugin install pod@pod-plugins",
+    "setup:codex:local": "codex plugin marketplace add \"$PWD\" && codex plugin add pod@pod-plugins",
+    "validate:claude": "claude plugin validate .",
+    "validate:codex": "python3 \"$HOME/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py\" ./pod"
+  }
+}

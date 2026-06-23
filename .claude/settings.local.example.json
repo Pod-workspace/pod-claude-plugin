@@ -1,0 +1,8 @@
+{
+  "enabledMcpjsonServers": [
+    "pod"
+  ],
+  "env": {
+    "POD_MCP_API_KEY": "<your-pod-mcp-api-key>"
+  }
+}

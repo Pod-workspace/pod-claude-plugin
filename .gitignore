@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+
+# Local Claude settings (contains secrets); commit the .example version instead
+.claude/settings.local.json
