@@ -20,7 +20,7 @@ Prefer direct Pod MCP read tools when the question asks for crisp evidence retri
 - `get_contact_sentiment` for relationship tone and sentiment.
 - `get_team_structure` for manager or team context.
 
-Use `ask_pod_agent` for broad research or synthesis tasks where the answer depends on multiple evidence families, ambiguous record matching, cross-account pattern finding, or "what changed / what should I focus on" style reasoning. If `ask_pod_agent` returns a `runId` and recovery instructions, use `get_ask_pod_agent_run` when needed to recover the final answer.
+Use `ask_pod_agent` for broad research or synthesis tasks where the answer depends on multiple evidence families, ambiguous record matching, cross-account pattern finding, or "what changed / what should I focus on" style reasoning. Check its runtime description for MCP servers available internally to Pod Agent. If a needed server is not listed but is available to the external agent, query it first and pass concise findings to `ask_pod_agent` as `context`. If `ask_pod_agent` returns a `runId` and recovery instructions, use `get_ask_pod_agent_run` when needed to recover the final answer.
 
 ## Evidence Discipline
 
