@@ -6,9 +6,9 @@ Pod plugins bring Pod's sales intelligence into Claude Code and Codex. They pack
 
 This repository is a plugin marketplace with one plugin today:
 
-| Plugin | How it helps | Connector |
-| --- | --- | --- |
-| **[pod](./pod)** | Review deal risk, prep calls, summarize meetings, triage pipeline, analyze stakeholders, and summarize account relationships. | Pod MCP |
+| Plugin           | How it helps                                                                                                                  | Connector |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------- |
+| **[pod](./pod)** | Review deal risk, prep calls, summarize meetings, triage pipeline, analyze stakeholders, and summarize account relationships. | Pod MCP   |
 
 The plugin does not implement Pod MCP tools. It points Claude Code and Codex at Pod's hosted read-only MCP server: `https://gateway.workwithpod.com/mcp`.
 
@@ -77,7 +77,6 @@ pod-plugins/
 │   ├── .mcp.json                    # Pod MCP connection
 │   ├── commands/                    # Claude Code slash commands
 │   └── skills/                      # Shared Pod workflow skills
-└── SUBMISSION.md                    # Marketplace submission notes
 ```
 
 - **Skills** encode Pod workflow expertise and are selected automatically when relevant.
@@ -98,5 +97,3 @@ Run both validators before release or submission:
 npm run validate:claude
 npm run validate:codex
 ```
-
-Marketplace submission notes live in [SUBMISSION.md](./SUBMISSION.md).
