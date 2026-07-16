@@ -67,35 +67,35 @@ codex mcp add pod --url https://gateway.workwithpod.com/mcp --bearer-token-env-v
 
 Claude Code exposes the plugin workflows as `/pod:*` slash commands. Codex uses the same underlying skills with `$skill-name`.
 
-| Claude Code command | Codex skill | Use it for | Example |
-| --- | --- | --- | --- |
-| `/pod:deal-risk-review` | `$deal-risk-review` | Diagnose close risk, forecast risk, stalled deals, stakeholder coverage, and missing evidence. | `/pod:deal-risk-review Globex expansion. Focus on close date and economic buyer risk.` |
-| `/pod:call-summary` | `$call-summary` | Summarize calls, debrief meetings, extract commitments, open questions, tone, and follow-up actions. | `/pod:call-summary Summarize the most recent procurement call for Acme.` |
-| `/pod:call-prep` | `$call-prep` | Prepare for discovery, demo, executive, renewal, procurement, legal, security, or multi-stakeholder meetings. | `/pod:call-prep Prepare me for tomorrow's security review with Northstar.` |
-| `/pod:pipeline-triage` | `$pipeline-triage` | Rank focus deals, identify urgent seller actions, and separate today, next-week, and monitor work. | `/pod:pipeline-triage What should I focus on today across my open deals?` |
+| Claude Code command     | Codex skill         | Use it for                                                                                                    | Example                                                                                |
+| ----------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `/pod:deal-risk-review` | `$deal-risk-review` | Diagnose close risk, forecast risk, stalled deals, stakeholder coverage, and missing evidence.                | `/pod:deal-risk-review Globex expansion. Focus on close date and economic buyer risk.` |
+| `/pod:call-summary`     | `$call-summary`     | Summarize calls, debrief meetings, extract commitments, open questions, tone, and follow-up actions.          | `/pod:call-summary Summarize the most recent procurement call for Acme.`               |
+| `/pod:call-prep`        | `$call-prep`        | Prepare for discovery, demo, executive, renewal, procurement, legal, security, or multi-stakeholder meetings. | `/pod:call-prep Prepare me for tomorrow's security review with Northstar.`             |
+| `/pod:pipeline-triage`  | `$pipeline-triage`  | Rank focus deals, identify urgent seller actions, and separate today, next-week, and monitor work.            | `/pod:pipeline-triage What should I focus on today across my open deals?`              |
 
 The plugin also includes skills that Claude Code or Codex can select automatically from natural language.
 
-| Skill | Use it for | Example prompt |
-| --- | --- | --- |
-| `stakeholder-gap-analysis` | Buying committee coverage, champion strength, economic buyer engagement, missing roles, and multi-threading risk. | `Which stakeholders are missing from the Acme deal?` |
-| `account-relationship-summary` | Account relationship health, engaged contacts, sentiment movement, coverage gaps, and relationship-building actions. | `Give me an account relationship summary for Northstar.` |
-| `use-pod-mcp-well` | Evidence discipline, tool selection, and read-only boundary handling for any Pod workflow. | `Use Pod to review this renewal and cite the evidence you used.` |
+| Skill                          | Use it for                                                                                                           | Example prompt                                                   |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| `stakeholder-gap-analysis`     | Buying committee coverage, champion strength, economic buyer engagement, missing roles, and multi-threading risk.    | `Which stakeholders are missing from the Acme deal?`             |
+| `account-relationship-summary` | Account relationship health, engaged contacts, sentiment movement, coverage gaps, and relationship-building actions. | `Give me an account relationship summary for Northstar.`         |
+| `use-pod-mcp-well`             | Evidence discipline, tool selection, and read-only boundary handling for any Pod workflow.                           | `Use Pod to review this renewal and cite the evidence you used.` |
 
 ## MCP Capabilities
 
 Pod MCP is read-only. It retrieves curated Pod evidence and can synthesize it, but it cannot update CRM, send email, create calendar events, complete recommendations, or save Pod workflows.
 
-| Capability | Pod MCP tools | Helps with |
-| --- | --- | --- |
-| CRM context | `get_crm_record_context` | Deal, account, contact, or lead context for risk review, call prep, and relationship summaries. |
-| Deal Coach recommendations | `get_deal_recommendations` | Flags, recommended seller actions, missing stakeholders, stale follow-up, and deal health concerns. |
-| Pipeline priorities | `get_deal_priorities` | Prioritize scores, ranking signals, temperature, pace, urgency, and focus deal selection. |
-| Playbook and framework coverage | `get_deal_framework_coverage`, `search_workspace_playbooks` | MEDDPICC, BANT, NEAT, ALIGN, custom methodology gaps, and workspace-specific playbook language. |
-| Call and transcript evidence | `get_transcript_call_ids`, `get_transcripts`, `get_transcript_summaries`, `search_transcript_chunks` | Call summaries, objections, commitments, stakeholder mentions, decision process, pricing, security, legal, and next steps. |
-| Stakeholder sentiment | `get_contact_sentiment` | Champion health, economic buyer engagement, sentiment changes, relationship risk, and follow-up needs. |
-| Team context | `get_team_structure` | Manager or team-level views for pipeline triage and coaching. |
-| Broad synthesis | `ask_pod_agent`, `get_ask_pod_agent_run` | Ambiguous record matching, cross-account research, multi-source synthesis, and "what should I focus on" questions. |
+| Capability                      | Pod MCP tools                                                                                        | Helps with                                                                                                                 |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| CRM context                     | `get_crm_record_context`                                                                             | Deal, account, contact, or lead context for risk review, call prep, and relationship summaries.                            |
+| Deal Coach recommendations      | `get_deal_recommendations`                                                                           | Flags, recommended seller actions, missing stakeholders, stale follow-up, and deal health concerns.                        |
+| Pipeline priorities             | `get_deal_priorities`                                                                                | Prioritize scores, ranking signals, temperature, pace, urgency, and focus deal selection.                                  |
+| Playbook and framework coverage | `get_deal_framework_coverage`, `search_workspace_playbooks`                                          | MEDDPICC, BANT, NEAT, ALIGN, custom methodology gaps, and workspace-specific playbook language.                            |
+| Call and transcript evidence    | `get_transcript_call_ids`, `get_transcripts`, `get_transcript_summaries`, `search_transcript_chunks` | Call summaries, objections, commitments, stakeholder mentions, decision process, pricing, security, legal, and next steps. |
+| Stakeholder sentiment           | `get_contact_sentiment`                                                                              | Champion health, economic buyer engagement, sentiment changes, relationship risk, and follow-up needs.                     |
+| Team context                    | `get_team_structure`                                                                                 | Manager or team-level views for pipeline triage and coaching.                                                              |
+| Broad synthesis                 | `ask_pod_agent`, `get_ask_pod_agent_run`                                                             | Ambiguous record matching, cross-account research, multi-source synthesis, and "what should I focus on" questions.         |
 
 ## How It Works
 
@@ -143,4 +143,4 @@ Suggested smoke tests:
 
 ## Repository Notes
 
-The root [README.md](../README.md) describes the plugin marketplace wrapper. Marketplace submission notes live in [SUBMISSION.md](../SUBMISSION.md).
+The root [README.md](../README.md) describes the plugin marketplace wrapper.
